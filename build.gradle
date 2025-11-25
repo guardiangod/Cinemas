@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'io.spring.javaformat' version '0.0.39'
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+}
+
+application {
+    mainClass = 'app.GicCinemasApp'
+}
+
+repositories { 
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.0'
+}
+
+test { 
+    useJUnitPlatform() 
+}

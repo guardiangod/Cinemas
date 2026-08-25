@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'application'
-    id 'io.spring.javaformat' version '0.0.39'
+    id 'io.spring.javaformat' version '0.0.47'
 }
 
 java {
